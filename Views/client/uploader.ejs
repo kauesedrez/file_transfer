@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,height=device-height,initial-scale=1,user-scalable=no,interactive-widget=resizes-content"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/uploader.css" />
+    <title>File Transfer Uploader</title>
+  </head>
+  <body>
+    <h1>File Transfer Uploader</h1>
+    <div class="container" id="uploader-box">
+      <div class="box" id="file-upload">
+        <span class="icon">
+          <i class="fas fa-cloud-upload-alt"></i>
+        </span>
+        <p>Choose Files</p>
+      </div>
+      <form enctype="multipart/form-data" id="upload-form">
+        <input
+          type="file"
+          name="files"
+          id="files"
+          class="inputfile"
+          multiple
+        />
+        <button
+          type="submit"
+          id="submit-button"
+          style="display: none"
+        >
+          Upload
+        </button>
+      </form>
+    </div>
+    <div id="file-list"></div>
+    <script src="/js/uploader.js"></script>
+  </body>
+</html>
